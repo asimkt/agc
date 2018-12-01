@@ -5,7 +5,7 @@ const { prompt } = require('inquirer');
 
 const checkMessagesResult = require('./check-result.js');
 
-const {KINGDOMS, QUESTIONS} = require('./constants.js')
+const {QUESTIONS} = require('./constants.js')
 
 program
   .version('0.0.1')
@@ -30,7 +30,6 @@ program
   .description('Add the messages from King Shan to five kingdoms')
   .action(() => {
     prompt(QUESTIONS).then(answers => {
-      console.info(answers);
       checkMessagesResult(answers)
     });
   });

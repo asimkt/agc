@@ -1,6 +1,10 @@
 const {validateInput, filterValue} = require('./utils.js');
 
-const KINGDOMS = ['land', 'water', 'ice', 'air', 'fire'];
+const KINGDOMS = {'land':'panda',
+    'water':'octopus',
+    'ice':'mammoth',
+    'air':'owl',
+    'fire':'dragon'};
 
 const QUESTIONS = [
   {
@@ -39,7 +43,7 @@ const QUESTIONS = [
     message : 'Input: '
   }
 ];
-// 
+
 // const QUESTIONS = [
 //   {
 //     type : 'input',

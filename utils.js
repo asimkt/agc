@@ -9,10 +9,11 @@ function filterValue(val, kingdoms) {
   if(val && val.includes(",")) {
     let splittedArray = val.split(",");
     let kingdom = splittedArray[0].toLowerCase();
-    if(kingdoms.indexOf(kingdom) > -1 && addedKingdoms.indexOf(kingdom) === -1) {
+    if(kingdoms[kingdom] && addedKingdoms.indexOf(kingdom) === -1) {
       addedKingdoms.push(kingdom);
       return {
         'kingdom': kingdom,
+        'emblem': kingdoms[kingdom],
         'message': splittedArray[1].replace(/['"“]+/g, '')
       };
     }
