@@ -1,0 +1,22 @@
+{
+  "name": "gt-golden-crown",
+  "version": "0.1.0",
+  "description": "A golden crown: Geektrust Problem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "geekstrust",
+    "golden-crown"
+  ],
+  "author": "Asim K T",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "inquirer": "^6.2.0",
+    "mongoose": "^5.3.14"
+  },
+  "preferGlobal": true,
+  "bin": "./input.js"
+}
