@@ -4,12 +4,16 @@ This repo hosts the solution for Geek Trust problem, A Golden Crown from A Tame 
 The problem statement can be found [here.](https://www.geektrust.in/coding-problem/backend/tame-of-thrones)
 
 ##How to run
-The solution is published in npm registry in the name `gt-golden-crown`. [Link to the NPM home page](gt-golden-crown)
-Solution can be run by
+The solution is published in npm registry in the name `gt-golden-crown`.
+
+[Link to the NPM home page can be found here](gt-golden-crown)
+
+
+The script can be run by
 ```
 npx gt-golden-crown send-messages
 ```
-Which will basically reads the user input and provides the output.
+Which will basically reads the user input and sends the messages to each kingdom provides the result.
 
 ### For development
 Install dependencies:
@@ -47,4 +51,4 @@ Output: Air, Land, Ice
 
 ###Todo:
 
-[] Check for repeated characters from the emblem in the message.
+[ ] Check for repeated characters from the emblem in the message.
