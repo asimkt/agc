@@ -14,7 +14,7 @@ function filterValue(val, kingdoms) {
       return {
         'kingdom': kingdom,
         'emblem': kingdoms[kingdom],
-        'message': splittedArray[1].replace(/['"“]+/g, '')
+        'message': splittedArray[1].toLowerCase().replace(/[^a-z]+/g, '')
       };
     }
     return false;

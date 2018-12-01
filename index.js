@@ -5,6 +5,7 @@ const { prompt } = require('inquirer');
 
 const checkMessagesResult = require('./check-result.js');
 
+// QUESTIONS is a dynamically generated constant.
 const {QUESTIONS} = require('./constants.js')
 
 program

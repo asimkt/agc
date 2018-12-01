@@ -15,9 +15,14 @@ function checkMessagesResult(messages) {
 }
 
 function isAllLettersIncluded(emblem, message) {
+  let checkedChars = [];
   let sumOfOccurencesOfLetters = emblem.split("").reduce((acc, item) => {
-    // TODO: Check for repeative letters
-    return message.indexOf(item) > -1 ? acc + 1 : acc;
+    if(checkedChars.indexOf(item) > -1) {
+      return acc + 1;
+    }
+    checkedChars.push(item);
+    let matchCharactersRegex = new RegExp(item, 'g');
+    return (message.match(matchCharactersRegex)||[]).length >= (emblem.match(matchCharactersRegex)||[]).length ? acc + 1 : acc;
   }, 0);
   return sumOfOccurencesOfLetters === emblem.length;
 }
