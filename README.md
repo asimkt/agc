@@ -1,9 +1,9 @@
-#Geektrust: A golden crown
+# Geektrust: A golden crown
 
 This repo hosts the solution for Geek Trust problem, A Golden Crown from A Tame of thrones.
 The problem statement can be found [here.](https://www.geektrust.in/coding-problem/backend/tame-of-thrones)
 
-##How to run
+## How to run
 The solution is published in npm registry in the name `gt-golden-crown`.
 
 [Link to the NPM home page can be found here](gt-golden-crown)
@@ -33,7 +33,7 @@ npm gt-golden-crown send-messages
 
 **NOTE:** Required node version: >=9.3.0
 
-##Sample Input Output
+## Sample Input Output
 ```
 Who is the ruler of Southeros?
 Ouput: None
@@ -49,6 +49,6 @@ Allies of Ruler?
 Output: Air, Land, Ice
 ```
 
-###Todo:
+### Todo:
 
 [ ] Check for repeated characters from the emblem in the message.
