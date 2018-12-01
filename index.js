@@ -3,7 +3,7 @@
 const program = require('commander');
 const { prompt } = require('inquirer');
 
-const checkMessagesResult = require('./check-result.js');
+const verifyMessages = require('./verify-messages.js');
 
 // QUESTIONS is a dynamically generated constant.
 const {QUESTIONS} = require('./constants.js')
@@ -17,7 +17,7 @@ program
   .description('Add the messages from King Shan to five kingdoms')
   .action(() => {
     prompt(QUESTIONS).then(answers => {
-      checkMessagesResult(answers)
+      verifyMessages(answers)
     });
   });
 
