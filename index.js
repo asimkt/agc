@@ -12,21 +12,7 @@ program
   .description('A golden crown');
 
 program
-  .command('WhoisRuler')
-  .description('Who is the ruler of Southeros?')
-  .action(() => {
-    console.info('None');
-  })
-
-program
-  .command('Allies')
-  .description('Allies of King Shan?')
-  .action(() => {
-    console.info('None');
-  })
-
-program
-  .command('sendMessages')
+  .command('send-messages')
   .description('Add the messages from King Shan to five kingdoms')
   .action(() => {
     prompt(QUESTIONS).then(answers => {
