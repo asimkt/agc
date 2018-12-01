@@ -1,11 +1,11 @@
 {
   "name": "gt-golden-crown",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "A golden crown: Geektrust Problem",
   "repository": {
     "type" : "git",
     "url" : "https://github.com/asimkt/agc.git"
-  }
+  },
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/"
