@@ -16,6 +16,7 @@ function checkMessagesResult(messages) {
 
 function isAllLettersIncluded(kingdom, message) {
   let sumOfOccurencesOfLetters = kingdom.split("").reduce((acc, item) => {
+    // Check for two letters
     return message.indexOf(item) > -1 ? acc + 1 : acc;
   }, 0);
   return sumOfOccurencesOfLetters === kingdom.length;
